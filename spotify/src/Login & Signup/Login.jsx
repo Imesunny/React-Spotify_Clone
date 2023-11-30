@@ -242,7 +242,7 @@ function Login(props) {
               w="30rem"
               borderRadius="5rem"
             >
-              SIGNUP FOR SPOTIFY
+              SIGNUP FOR SPOTIFY ACCOUNT
             </Button>
           </Box>
         </div>
