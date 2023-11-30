@@ -1,9 +1,7 @@
 import React, { useRef, useState,useContext } from "react";
 import {
-  Avatar,
-  
-  Divider,
-  
+  Avatar,  
+  Divider,  
   VStack,
   Menu,
   MenuItem,
@@ -94,13 +92,14 @@ console.log("------------>",items);
   const removeSong = (index,likedId) => {
     let arr = [...liked];
     let arr2 = [...likedIds];
+
     // for liked songs
     arr = arr.filter((e, id) => {
       return likedId != e.track.id;
     });
     // for liked ids
     arr2 = arr2.filter((e, id) => {
-      return likedId != e;
+      return likedId !== e;
     });
 
     localStorage.setItem("liked", JSON.stringify(arr));
